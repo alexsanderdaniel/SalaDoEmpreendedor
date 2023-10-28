@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="teste.css" rel="stylesheet">
+    <script src="teste.js"></script>
+    <title>teste</title>
+</head>
+<body>
+    <!-- As partes comentadas ainda estão em Desenvolvimento -->
+    <!-- Cabeçalho do site principal -->
+    <header>
+        <nav class="menu">
+            <!-- logotipo do cabeçalho -->
+            <a href="https://sebraemg.com.br/salamineiradoempreendedor/" target="_blank">
+                <img src="./Sala do Empreendedor_files/logo-sala-mineira.svg" alt="">
+            </a>
+            
+            <!-- menu de navegação do cabeçalho -->
+                            <ul class="menu-items">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#contato"> Contatos</a></li>
+                    <li></li>
+                    <li></li>
+                    
+                    <li>Tema  <button id="sol" class="loc"><img src="./Sala do Empreendedor_files/sol.png" class="tema"></button>
+                        <button id="lua" class="loc"><img src="./Sala do Empreendedor_files/lua.png" class="tema"></button></li>
+                </ul>
+            <!-- ícone de menu responsivo -->
+            <span class="btn-menu">
+                <img id="menu-icon" src="./Sala do Empreendedor_files/bars-solid.svg" alt="">
+                <div id="options-menu" class="hidden">
+                    <!-- Conteúdo do menu de opções -->
+                    <ul>
+                        <li><a href="#">Serviços</a></li><br>
+                        <li><a href="#nota-fiscal">Nota Fiscal</a></li><br>
+                        <!-- <li><a href="#certidoes">Certidoes</a></li><br> -->
+                        <!-- <li><a href="#credito">Crédito</a></li><br> -->
+                        <li><a href="#informacoes">Informações</a></li><br>
+                        <!-- <li><a href="#compras">Escritório de Compras</a></li><br> -->
+                        <!-- <li><a href="#alvara">Alvará</a></li> -->
+                    </ul>
+                </div>
+            </span>
+        </nav>        
+    </header>
+    
+<!-- Seção de Serviços -->
+<section class="principal-container services" id="services">
+    <div class="secondary-container services-container">
+        <h1 class="title-blue" id="servicos">Serviços
+            <img src="./Sala do Empreendedor_files/seta-para-baixo.png" class="imgSeta" id="serviceButton">
+        </h1>
+
+            <div id="popupContainer" class="popupContainer">
+                <div class="popupContent">
+                    <button id="fecharPopUp" class="fecharPopUp">X</button>
+                    <iframe src="https://forms.gle/ryiTQFrmzLKw1Fm58" width="100%" height="500"></iframe>
+                </div>
+            </div>
+
+
+        <div class="cards-container" id="cards-container-services">
+            <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/controleAcesso/Autentica.aspx?id=16"
+                class="custom-button blue-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/printer.png"/> Reimpressão de declaração
+            </a>
+
+            <a href="https://www.regularize.pgfn.gov.br/login"
+                class="custom-button yellow-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/parcelamento.png"/> Parcelamento Regularize
+            </a>
+
+            <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/baixa-de-mei"
+                class="custom-button blue-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/check-mark.png"/> Baixa MEI
+            </a>
+
+            <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/atualizacao-cadastral-de-mei"
+                class="custom-button yellow-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/editar-arquivo.png"/> Alteração cadastral MEI
+            </a>
+
+            <a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Servicos/Grupo.aspx?grp=19"
+                class="custom-button blue-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/parcelamento.png"/> Parcelamento DAS
+            </a>
+
+            <a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/dasnsimei.app/Identificacao"
+                class="custom-button yellow-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/docs.png"/> Declaração anual Faturamento(DASN)
+            </a>
+
+            <a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Servicos/Grupo.aspx?grp=18"
+                class="custom-button blue-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/folha-de-Pagamento.png"/> Restituição de DAS duplicados
+            </a>
+
+            <a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Servicos/Grupo.aspx?grp=16"
+                class="custom-button yellow-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/debito.png"/> Débito automático DAS
+            </a>
+
+            <a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/Identificacao"
+                class="custom-button blue-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/printer.png"/> Imprima seu DAS(Boleto Mensal)
+            </a>
+
+            <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_solicitacao.asp"
+                class="custom-button yellow-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/printer.png"/> Imprima seu CNPJ
+            </a>
+
+            <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/servicos-para-mei/emissao-de-comprovante-ccmei"
+                class="custom-button blue-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="https://www.varzeadapalma.mg.gov.br/imgeditor/image/icon_impressora.png" /> Imprima seu CCMEI
+            </a>        
+
+            <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/quero-ser-mei"
+                class="custom-button yellow-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/empresa.png" /> Formalize sua empresa
+            </a>
+
+            <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/quero-ser-mei/atividades-permitidas"
+                class="custom-button blue-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/maleta.png" /> Ocupações permitidas no  MEI
+            </a>
+
+            <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/quero-ser-mei/direitos-e-obrigacoes/"
+                class="custom-button yellow-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/direitoedeveres.png"/> Direitos e deveres
+            </a>
+    
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Nota Fiscal -->
+<section class="principal-container nota" id="nota-fiscal">
+    <div class="secondary-container nota-container">
+        <h1 class="title-blue" >Nota Fiscal
+            <img src="./Sala do Empreendedor_files/seta-para-baixo.png" class="imgSeta" id="noteButton">
+        </h1>
+
+        <div class="cards-container cards-forms-service-note" id="cards-container-note">
+            <a href="https://www2.fazenda.mg.gov.br/sol/ctrl/SOL/NFAE/SERVICO_007?ACAO=NOVO&ACESSO_EXTERNO=1"
+                class="custom-button blue-gradient-button" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/nota.png" /> Nota fiscal de Produto
+            </a>
+
+            <a href="https://www.nfse.gov.br/EmissorNacional/Login"
+                class="custom-button yellow-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/nota.png" /> Nota fiscal de Serviço
+            </a>
+
+            <a href="https://www.nfse.gov.br/EmissorNacional/Acesso/Identificacao?acao=PrimeiroAcesso"
+                class="custom-button blue-gradient-button cards-forms-service-note" target="_blank">
+                <img alt="" src="./Sala do Empreendedor_files/receitas.png" /> Primeiro acesso a nota fiscal(Serviço)
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Certidões -->
+<!-- <section class="principal-container certificate" id="certidoes"> -->
+    <!-- <div class="secondary-container certificate-container"> -->
+        <!-- <h1 class="title-blue">Certidões -->
+            <!-- <img src="./Sala do Empreendedor_files/seta-para-baixo.png" class="imgSeta" id="certificateButton"> -->
+        <!-- </h1> -->
+        <!-- <div class="cards-container" id="cards-container-certificate"> -->
+
+            <!-- Cartões de serviço são criados aqui -->
+            <!-- <a href="https://forms.gle/qciMHMKaZcPzacn5A" -->
+                <!-- class="custom-button yellow-gradient-button" target="_blank"> -->
+                <!-- <img alt="" src="./Sala do Empreendedor_files/nota.png" /> Formulário Serviço -->
+            <!-- </a> -->
+<!--  -->
+            <!-- <a href="https://www.nfse.gov.br/EmissorNacional/Acesso/Identificacao?acao=PrimeiroAcesso" -->
+                <!-- class="custom-button blue-gradient-button" target="_blank"> -->
+                <!-- <img alt="" src="./Sala do Empreendedor_files/receitas.png" /> Primeiro acesso a nota fiscal(Serviço) -->
+            <!-- </a> -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </section> -->
+
+<!-- Seção de Crédito -->
+<!-- <section class="principal-container credit" id="credito"> -->
+    <!-- <div class="secondary-container credit-container"> -->
+        <!-- <h2 class="title-blue">Crédito</h2> -->
+        <!-- <div class="cards-container"> -->
+            <!-- Cartões de serviço são criados aqui  -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </section> -->
+
+<!-- Seção de Informações -->
+<section class="principal-container information" id="informacoes">
+    <div class="secondary-container information-container">
+        <h1 class="title-blue">Informações
+            <img src="./Sala do Empreendedor_files/seta-para-baixo.png" class="imgSeta" id="infButton">
+        </h1>
+        <div class="cards-container" id="cards-container-inf">
+            <div>
+                <div id="popupInformacoes" class="popupContainer">
+                    <div class="popupContent">
+                        <button id="fechar-atualiza-dados" class="fecharPopUp">X</button>
+                        <iframe src="https://forms.gle/5HHSccQFvCfeyvdcA" width="100%" height="500"></iframe>
+                    </div>
+                </div>
+                <div class="custom-button blue-gradient-button" id="atualiza-dados">
+                    <img alt="" src="./Sala do Empreendedor_files/editar-arquivo.png" /> Atualize seus dados no sosso sistema
+                    <div id="popupInformacoes" class="popupContainer"></div>
+                </div>
+            </div>
+            
+            <div>
+                <div id="popupSatisfacao" class="popupContainer">
+                    <div class="popupContent">
+                        <button id="fechar-satisfacao" class="fecharPopUp">X</button>
+                        <iframe src="https://forms.gle/QKPRA54hCMpBr2W87" width="100%" height="500"></iframe>
+                    </div>
+                </div>
+                <div class="custom-button yellow-gradient-button" id="satisfacao">
+                    <img alt="" src="./Sala do Empreendedor_files/lupa.png" /> Pesquisa de Satisfação
+                    <div id="popupInformacoes" class="popupContainer"></div>
+                </div>
+            </div>
+
+            <!-- <div> -->
+                <!-- <div id="popupSatisfacao" class="popupContainer"> -->
+                    <!-- <div class="popupContent"> -->
+                        <!-- <button id="fechar-satisfacao" class="fecharPopUp">X</button> -->
+                        <!-- <iframe src="https://forms.gle/QKPRA54hCMpBr2W87" width="100%" height="500"></iframe> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="custom-button blue-gradient-button" id="satisfacao"> -->
+                    <!-- <img alt="" src="./Sala do Empreendedor_files/not-process.png" /> Documentos para atendimento -->
+                    <!-- <div id="popupInformacoes" class="popupContainer"></div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+            
+        </div>
+    </div>
+
+<!-- Seção de Escritório de Compras -->
+<!-- <section class="principal-container shopping" id="compras"> -->
+    <!-- <div class="secondary-container shopping-container"> -->
+        <!-- <h2 class="title-blue">Escritório de Compras</h2> -->
+        <!-- <div class="cards-container"> -->
+            <!-- Cartões de serviço serão criados aqui -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </section> -->
+
+<!-- Seção de Alvará -->
+<!-- <section class="principal-container alvara" id="alvara"> -->
+    <!-- <div class="secondary-container alvara-container"> -->
+        <!-- <h2 class="title-blue">Alvará</h2> -->
+        <!-- <div class="cards-container"> -->
+            <!-- Cartões de serviço serão criados aqui -->
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </section> -->
+
+<!-- chamando o rodapé -->
+<footer class="principal-container">
+    <div class="secondary-container footer" id="texto">
+        <div class="footer-column location">
+            <h3 class="title-blue">Localização</h3>
+            <span>Rua Pedro Rodrigues de Mendes, 1474, Centro, Várzea da Palma-MG  </span><br>
+            <a href="https://maps.app.goo.gl/yReoe9vNq8NmRuMV6" target="_blank"><button class="loc">Ver no mapa</button></a>
+            
+            <div class="horarios">Horário de funcionamento: <span>7:00-16:00.</span></div>
+
+            <a href="https://www.varzeadapalma.mg.gov.br" target="_blank"><img src="./Sala do Empreendedor_files/icon_prefeitura.png" alt=""></a>
+            <a href="https://www.varzeadapalma.mg.gov.br/portal/secretarias/35/secretaria-municipal-de-desenvolvimento-economico-agricultura-e-meio-ambiente/" target="_blank" id="secretaria"><img
+                    src="./Sala do Empreendedor_files/Logo Secretaria Desenvolvimento Econômico.jpg" alt=""></a>
+        </div>
+        <div class="footer-column social">
+            <h3 id="contato" class="title-blue">Contato</h3>
+            <ul class="contato">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><span>Telefone:</span></td>
+                            <td><span>(38) 99814-1422</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Whatsapp:</span></td>
+                            <td><a href="https://wa.me/message/PH7DSHVBFVL7H1" target="_blank"><span>(38) 3731-1232</span></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div>Prefeitura Municipal de Várzea da Palma - Minas Gerais. Todos os direitos reservados </div>
+    </div>
+</footer>
+</body>
+</html>

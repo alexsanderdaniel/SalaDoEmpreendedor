@@ -1,0 +1,250 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #3a3939; Escuro */
+    background-color: #f9f1f1; /* Claro*/
+
+}
+
+a {
+    text-decoration: none;
+    color: #3459ff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    /* background-color: #ded4d4; Escuro */
+    background-color: #ffffff; /* Claro */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu a img {
+    height: 70px;
+}
+
+.menu-items li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.btn-menu img {
+    width: 24px;
+    height: 24px;
+}
+
+.tema{
+    width: 15px;
+}
+
+/* Botões de tema e localização */
+.loc{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #a7a7a7;
+    cursor: pointer;
+}
+
+/* Estilo para a opção do menu */
+#options-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+#options-menu ul li a:hover {
+    color: #001eff;  /* Altera a cor quando o cursor passa sobre a opção */
+}
+
+#services{
+    padding-top: 60px;
+}
+
+#options-menu {
+    position: absolute;
+    top: 60px;
+    right: 2%;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 100;
+}
+
+/* Formulário */
+.popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    text-align: center;
+}
+
+.popupContent {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.fecharPopUp{
+    display: flex;
+    margin-left: auto;
+}
+
+.fecharPopUp:hover{
+    background-color: #d93a3a;
+    cursor: pointer;
+}
+
+/* containers */
+.secondary-container {
+    /* background-color: #020202; Escuro */
+    background-color: #a7a7a7; /* Claro */  
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.title-blue {
+    display: flex;
+    /* color: #9ca7b3; Escuro */
+    color: black; /* Claro */
+    font-size: 30px;
+    font-family: trebuchet ms;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#texto{
+    color: white;
+}
+
+.imgSeta{
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Estilos dos botões */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.custom-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    border-radius: 7px;
+    text-align: center;
+    font-family: trebuchet ms;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #8f7f24;
+    width: 280px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.custom-button img {
+    height: auto;
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.yellow-gradient-button {
+    background: linear-gradient(to bottom, #fba40f 5%, #f8d700 100%); /* Claro */
+    /* background: linear-gradient(to bottom, #9e6503 5%, #fba40f 100%); Escuro */
+    color: #fff;
+    font-size: 30px;
+}
+
+.blue-gradient-button {
+    background: linear-gradient(to bottom, #0a9bfb 5%, #0ae8f8 100%); /* Claro */
+    /* background: linear-gradient(to bottom, #044a78 5%, #0a9bf0 100%); Escuro */
+    color: #fff;
+    font-size: 30px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #9c9c9c;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-column {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    color: #007BFF;
+    font-size: 1.2rem;
+}
+
+.footer-column ul {
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-copyright {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    font-size: 0.8rem;
+}
+
+#secretaria{
+    display: inline-block;
+    width: 5%; 
+    vertical-align: top;
+    padding: 10px;
+    text-align: right;
+    right: 0;
+}
+
+#secretaria img{
+    width: 150px;
+    padding-left: 1200%;
+}
+
+.hidden {
+    display: none;
+}
